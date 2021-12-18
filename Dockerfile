@@ -1,5 +1,7 @@
 FROM debian:sid
 
+# Add curl to automatically restart the app at a specific time using Heroku Scheduler
+
 RUN set -ex\
     && apt update -y \
     && apt upgrade -y \
